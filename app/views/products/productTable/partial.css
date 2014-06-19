@@ -1,0 +1,22 @@
+.pt_table{
+    display: table;
+}
+.pt_caption{
+    display: table-caption;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+.pt_th{
+    display: table-cell;
+    font-weight: bold;
+    text-align: center;
+}
+.pt_tr{
+    display: table-row;
+}
+.pt_td{
+    display: table-cell;
+    padding-left: 5px;
+    padding-right: 5px;
+}

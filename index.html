@@ -1,0 +1,33 @@
+<html ng-app="app">
+<head>
+  <script type="text/javascript" src="lib/greensock/src/uncompressed/TweenMax.js"></script>
+  <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="lib/angular/angular.js"></script>
+  <script type="text/javascript" src="lib/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="lib/ng-table/ng-table.js"></script>
+  <script type="text/javascript" src="app/views/home/controller.js"></script>
+  <script type="text/javascript" src="app/views/invoice/controller.js"></script>
+  <script type="text/javascript" src="app/views/products/productTable/directive.js"></script>
+  <script type="text/javascript" src="app/views/products/controller.js"></script>
+
+  <script type="text/javascript" src="app/app.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="lib/ng-table/ng-table.css">
+  <link rel="stylesheet" type="text/css" href="app/main.css">
+  <link rel="stylesheet" type="text/css" href="app/views/home/partial.css">
+  <link rel="stylesheet" type="text/css" href="app/views/invoice/partial.css">
+  <link rel="stylesheet" type="text/css" href="app/views/products/partial.css">
+  <link rel="stylesheet" type="text/css" href="app/views/products/productTable/partial.css">
+
+
+
+
+</head>
+<body>
+
+  <div class="container">
+    <h1 style="text-align: center;">Invoicer Demo</h1>
+    <ng-view></ng-view>
+  </div>
+</body>
+</html>
