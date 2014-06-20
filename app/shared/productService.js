@@ -1,3 +1,4 @@
+//Singleton that would load product data from server
 angular.module('shared.productService', [])
 
 .service("productService", function(){

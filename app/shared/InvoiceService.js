@@ -1,7 +1,9 @@
-//A service that saves product data and shares it between product + invoice views
-angular.module('shared.invoiceService', [])
+//A singleton that manages the current invoice + loads past invoices
+angular.module('shared.invoiceService', [
+  'underscore'
+])
 
-.service("invoiceService", function(){
+.service("invoiceService", function(_){
   var pastInvoices = [
     {number: 1, date: "05/24/2014", customer: "Acme Inc.", products:[{name: "Product 1", quantity: 1, price: 29.99 }, {name: "Product 2", quantity: 1, price: 39.99 }] },
   ];

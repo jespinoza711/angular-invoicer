@@ -1,3 +1,5 @@
+//Filter that displays a number, ensuring number length.
+//Example: 23 | minDigits:5 -> becomes "00023"
 angular.module('shared.minDigitsFilter', [])
 
 .filter("minDigits", function(){
