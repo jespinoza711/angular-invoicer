@@ -1,6 +1,6 @@
 Angular-Invoicer
 ===============
-Sample angular project for generating invoices. 
+A sample angular project for generating invoices. 
 
 ![](https://dl.dropboxusercontent.com/u/6061717/Screenshot%202014-06-19%2018.30.28.png)
 
