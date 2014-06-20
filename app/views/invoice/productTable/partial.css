@@ -1,0 +1,10 @@
+.inv_pt {
+  width: 500px;
+}
+.inv_pt table{
+  width: 100%;
+}
+.inv_pt .totalText{
+  text-align: right;
+  padding-right: 8px;
+}

@@ -1,6 +1,4 @@
-<product-table>
-  <product ng-repeat="item in products" name="{{item.name}}" price="{{item.price}}" description="{{item.description}}"></product>
-</product-table>
+<prd-product-table products="products"></prd-product-table>
 
-<a href='#/invoice'><button>Add Products</button></a>
+<a href='#/invoice' ng-click="saveProductsToInvoice()"><button>Add Products</button></a>
 <a href='#/invoice'><button>Return to Invoice</button></a>

@@ -1,0 +1,21 @@
+<div class="inv_pt">
+  <table>
+    <tr>
+      <th>Product Name</th>
+      <th>Quantity</th> 
+      <th>Price</th>
+      <th>Total</th>
+      <th></th>
+
+    </tr>
+    <tr ng-repeat="item in products">
+      <td>{{item.name}}</td>
+      <td><input type="text" ng-model="item.quantity"></td>
+      <td>$<input type="text" ng-model="item.price"></td>
+      <td>{{item.price*item.quantity | currency : "$"}}</td>
+      <td><a ng-click="deleteProduct(item)"><button>X</button></a></td>
+    </tr>
+  </table>
+  <div class="totalText">Total: {{calcTotal() | currency: "$"}}</div>
+
+</div>

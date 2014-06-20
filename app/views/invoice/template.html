@@ -1,12 +1,18 @@
-<div class="invoice_infoBox">
-  <div class="invoice_infoRow">Invoice Number: <input class="invoice_inputField" ng-model="invoiceNumber" type="text"> </div>
-  <div class="invoice_infoRow">Invoice Date: <input class="invoice_inputField" ng-model="invoiceDate" type="text"> </div>
-  <div class="invoice_infoRow">Customer Name: <input class="invoice_inputField" ng-model="invoiceCustomer" type="text"> </div>
-</div>
-<h3>Products</h3>
-<a href='#/products'><button>Add New Product</button></a> 
+<div class="inv">
+  <div class="infoBox">
+    <div class="infoRow">Invoice Number: <span class="invoiceId">{{invoice.number | minDigits:5}}</span></div>
+    <div class="infoRow">Invoice Date: <input class="inputField" ng-model="invoice.date" type="text"> </div>
+    <div class="infoRow">Customer Name: <input class="inputField" ng-model="invoice.customer" type="text"> </div>
+  </div>
 
-<div style="height:20px;"></div>
-<a href='#'><button>Save Invoice</button></a>
-<a href='#'><button>Discard Invoice</button></a>
+  <h3>Products</h3>
+  <inv-product-table products="invoice.products"></inv-product-table>
+  <a href='#/products'><button>Add New Product</button></a> 
+
+  <div style="height:20px;"></div>
+  <a href='#' ng-click="saveInvoice()"><button>Save Invoice</button></a>
+  <a href='#'><button>Discard Changes</button></a>
+  <a ng-click="sendPdf()"><button>Send PDF</button></a>
+</div>
+
 

@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th></th>
+    <th>Product Name</th>
+    <th>Description</th> 
+    <th>List Price</th>
+  </tr>
+  <tr ng-repeat="item in products">
+    <td><input type="checkbox" ng-model="item.selected"></td>
+    <td>{{item.name}}</td>
+    <td>{{item.description}}</td>
+    <td>{{item.price}}</td>
+  </tr>
+</table>

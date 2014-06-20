@@ -1,6 +1,17 @@
-angular.module('app.invoice', [])
+angular.module('app.invoice', [
+  'app.invoice.productTable',
+  'shared.invoiceService',
+  'shared.minDigitsFilter',
+])
 
-.controller("InvoiceController", function($scope){
-  $scope.invoiceNumber = "00001";
-  $scope.invoiceDate = "5/21/2014";
+.controller("invoiceController", function($scope, invoiceService){
+  $scope.invoice = invoiceService.getCurrentInvoice();
+
+  $scope.saveInvoice = function(){
+    console.log("Saving Invoice");
+    invoiceService.saveCurrentInvoice();
+  };
+  $scope.sendPdf = function(){
+    console.log("Sending PDF - placeholder");
+  };
 });
