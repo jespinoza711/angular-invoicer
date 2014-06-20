@@ -11,7 +11,8 @@ angular.module('app.invoice', [
     console.log("Saving Invoice");
     invoiceService.saveCurrentInvoice();
   };
-  $scope.sendPdf = function(){
-    console.log("Sending PDF - placeholder");
+  $scope.printInvoice = function(){
+    console.log("Printing Invoice");
+    window.print();
   };
 });
