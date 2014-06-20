@@ -1,6 +1,8 @@
 body{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  background: url(/app/images/ice_age.png);
 }
 .container{
-  width:970px;
+  width:670px;
   margin:auto;
 }
