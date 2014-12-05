@@ -2,7 +2,8 @@ Angular-Invoicer
 ===============
 A sample angular project for generating invoices. 
 
-![](https://dl.dropboxusercontent.com/u/6061717/Screenshot%202014-06-19%2018.30.28.png)
+![](https://cloud.githubusercontent.com/assets/2387719/5312217/7f5c121e-7c23-11e4-9aea-8ffdc0241e47.png)
+
 
 Demo: http://angular-invoicer.azurewebsites.net/#/
 
